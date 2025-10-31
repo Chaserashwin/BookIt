@@ -25,6 +25,10 @@ app.use("/promo/validate", promoRouter);
 //Store booking details
 app.use("/bookings", bookingRouter);
 
+app.get("/", (req, res) => {
+  res.send("✅ Bookit Backend API is running successfully!");
+});
+
 // Database connection (connect once per serverless cold start)
 connectDB()
   .then(() => console.log("✅ Database connected"))
