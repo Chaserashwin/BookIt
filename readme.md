@@ -145,15 +145,27 @@ Frontend runs on [http://localhost:5173](http://localhost:5173)
 | GET    | `/experiences`     | Fetch all experiences         |
 | GET    | `/experiences/:id` | Get details of one experience |
 | POST   | `/bookings`        | Create a booking              |
-| GET    | `/bookings`        | Get all bookings              |
+| POST   | `/promo/validate`  | Validate promo code           |
 
 ---
 
 ## 📸 Screenshots
 
-> _(Add some screenshots here once your frontend is finalized)_
+### Home Page
 
----
+![HomePage](<./client/public/Screenshot 2025-11-01 001418.png>)
+
+### Details Page
+
+![Details](<./client/public/Screenshot 2025-11-01 001451.png>) ![alt text](<./client/public/Screenshot 2025-11-01 001727.png>)
+
+### Checkout Page
+
+![Checkout](<./client/public/Screenshot 2025-11-01 001924.png>)
+
+### Result Page
+
+![alt text](<./client/public/Screenshot 2025-11-01 002058.png>)
 
 ## 💡 Future Improvements
 
