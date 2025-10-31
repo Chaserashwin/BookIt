@@ -7,12 +7,24 @@ const experienceRouter = require("./routes/experience");
 require("dotenv").config();
 
 const app = express();
-
 app.use(express.json());
+
+// List of allowed origins
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://bookit-frontend-ejtartf5y-chaserashwin-projects.vercel.app",
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
   })
 );
 
