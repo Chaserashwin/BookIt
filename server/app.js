@@ -12,6 +12,8 @@ app.use(express.json());
 // List of allowed origins
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://bookit-frontend-smoky.vercel.app",
+  "https://bookit-frontend-chaserashwin-projects.vercel.app",
   "https://bookit-frontend-ejtartf5y-chaserashwin-projects.vercel.app",
 ];
 
