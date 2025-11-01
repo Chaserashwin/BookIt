@@ -23,7 +23,7 @@ const Header = () => {
           }}
         />
         <button
-          className="w-[87px] h-[42px] rounded-lg bg-[#FFD643] ml-1"
+          className="w-[87px] h-[42px] rounded-lg bg-[#FFD643] ml-1 cursor-pointer"
           onClick={() => {
             setSearch(searchText);
           }}
