@@ -48,6 +48,14 @@ connectDB()
   .then(() => console.log("✅ Database connected"))
   .catch((err) => console.error("❌ Database connection error:", err));
 
+// ✅ Run server locally only (Vercel provides its own handler)
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running locally on port ${PORT}`);
+  });
+}
+
 // ✅ No app.listen() here — export the app instead
 module.exports = app;
 
