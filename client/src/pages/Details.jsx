@@ -3,8 +3,8 @@ import { Link, useNavigate, useParams } from "react-router";
 // import Experiences from "../utils/Experiences";
 import { useState } from "react";
 import { useEffect } from "react";
-import Shimmer from "../components/Shimmer";
 import axios from "axios";
+import ShimmerDetails from "../components/Shimmer/SimmerDetails";
 
 const Details = () => {
   const [experience, setExperience] = useState();
@@ -67,7 +67,7 @@ const Details = () => {
     return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   };
 
-  if (loading) return <Shimmer />;
+  if (loading) return <ShimmerDetails />;
 
   return (
     <>
@@ -93,7 +93,7 @@ const Details = () => {
         alt={experience?.name}
       />
       {/* bottom card */}
-      <div className="w-[765px]  top-[568px] left-[124px] gap-8 pb-20 absolute">
+      <div className="w-[765px] top-[568px] left-[124px] gap-8 pb-20 absolute">
         <div className="flex flex-col w-[765px] h-24 gap-4 mb-4">
           <h2 className="w-[765px] h-8 font-medium text-[24px] leading-8 text-[#161616]">
             Kayaking

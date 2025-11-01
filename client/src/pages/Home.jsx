@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import Experiences from "../utils/Experiences";
 import SearchContext from "../utils/SearchContext";
 import axios from "axios";
-import Shimmer from "../components/Shimmer";
+import ShimmerHome from "../components/Shimmer/ShimmerHome";
 
 const Home = () => {
   const { search } = useContext(SearchContext);
@@ -43,7 +43,7 @@ const Home = () => {
     setFilteredExperiences(filterExp);
   }, [search, experiences]);
 
-  if (loading) return <Shimmer />;
+  if (loading) return <ShimmerHome />;
   return (
     <div className="grid grid-cols-4 top-[135px] left-[124px] gap-6 pb-20 absolute">
       {filteredExperiences.map((experience) => (
