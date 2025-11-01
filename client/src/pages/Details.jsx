@@ -200,7 +200,7 @@ const Details = () => {
                 Starts at
               </div>
               <div className="w-11 h-[22px] font-normal text-[18px] leading-[22px] text-[#161616]">
-                {experience?.price}
+                ₹{experience?.price}
               </div>
             </div>
             <div className="flex flex-row w-[339px] h-5 top-[37.5px] justify-between">

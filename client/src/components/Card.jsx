@@ -42,7 +42,7 @@ const Card = (data, key) => {
               From
             </div>
             <div className="w-[50px] h-6 font-medium text-[20px] leading-6">
-              {price}
+              ₹{price}
             </div>
           </div>
           <Link to={`/details/${id}`}>
