@@ -33,7 +33,7 @@ const Card = (data, key) => {
             </div>
           </div>
           <div className="text-[12px] leading-4 font-normal text-[#6C6C6C] h-8 mt-1.5">
-            {description.slice(0, 60)}
+            {description.slice(0, 81)}
           </div>
         </div>
         <div className="flex w-full h-[30px] justify-between items-center">
